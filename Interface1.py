@@ -8,7 +8,7 @@ import numpy as np
 import os,sys
 import os.path
 import cv2, glob
-images=glob.glob(r'C:\Documents\python\template\cropped denomination_(FINAL)\*.jpg')
+images=glob.glob(r'.\templates\*.jpg')
 
 
 
@@ -18,7 +18,7 @@ class Window(QtGui.QMainWindow):
         super(Window, self).__init__()
         self.setGeometry(450, 150, 1000, 450)
         self.setWindowTitle("Currency Recognition and Conversion")
-        self.setWindowIcon(QtGui.QIcon(r'images\rupee.png'))
+        self.setWindowIcon(QtGui.QIcon(r'.\images\rupee.png'))
     
         
 ##        extractAction = QtGui.QAction("&GET TO THE CHOPPAH!!!", self)
@@ -29,36 +29,36 @@ class Window(QtGui.QMainWindow):
         
 		
         self.label1 = QtGui.QLabel(self)
-        self.label1.move(350,100)
+        self.label1.move(480,100)
         self.label1.setFont(QtGui.QFont("Calibri",25, QtGui.QFont.Bold))
         self.label1.resize(500,70)
 
         self.label2 = QtGui.QLabel(self)
-        self.label2.move(350,200)
+        self.label2.move(480,200)
         self.label2.setFont(QtGui.QFont("Calibri", 25, QtGui.QFont.Bold))
         self.label2.resize(500,70)
 
         self.label3 = QtGui.QLabel(self)
-        self.label3.move(350,300)
+        self.label3.move(480,300)
         self.label3.setFont(QtGui.QFont("Calibri",25, QtGui.QFont.Bold))
         self.label3.resize(500,70)
 
         self.label4 = QtGui.QLabel(self)
         self.label4.move(100,300)
         self.label4.setFont(QtGui.QFont("Calibri",25, QtGui.QFont.Bold))
-        self.label4.resize(350,70)
+        self.label4.resize(370,70)
         self.label4.setText('Value(in Rupees):')
 
         self.label5 = QtGui.QLabel(self)
         self.label5.move(100,200)
         self.label5.setFont(QtGui.QFont("Calibri",25, QtGui.QFont.Bold))
-        self.label5.resize(350,70)
+        self.label5.resize(360,70)
         self.label5.setText('Denomination:')
 
         self.label6 = QtGui.QLabel(self)
         self.label6.move(100,100)
         self.label6.setFont(QtGui.QFont("Calibri",25, QtGui.QFont.Bold))
-        self.label6.resize(350,70)
+        self.label6.resize(360,70)
         self.label6.setText('Currency:')
 
         self.statusBar()
@@ -94,7 +94,7 @@ class Window(QtGui.QMainWindow):
         self.toolBar = self.addToolBar("extractBattel")
         self.toolBar.addAction(extractBattel)
 
-##        Game = QtGui.QAction(QtGui.QIcon(r'images\guitar.jpg'), 'TP', self)
+##        Game = QtGui.QAction(QtGui.QIcon('guitar.jpg'), 'TP', self)
 ##        Game .triggered.connect(self.message_application)
 ##        Game .setStatusTip('OOPs')
 ##
