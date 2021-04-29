@@ -18,7 +18,7 @@ class Window(QtGui.QMainWindow):
         super(Window, self).__init__()
         self.setGeometry(450, 150, 1000, 450)
         self.setWindowTitle("Currency Recognition and Conversion")
-        self.setWindowIcon(QtGui.QIcon('rupee.png'))
+        self.setWindowIcon(QtGui.QIcon(r'images\rupee.png'))
     
         
 ##        extractAction = QtGui.QAction("&GET TO THE CHOPPAH!!!", self)
@@ -76,7 +76,7 @@ class Window(QtGui.QMainWindow):
         
         
         
-        extractAction = QtGui.QAction(QtGui.QIcon('currency.png'), 'Open File', self)
+        extractAction = QtGui.QAction(QtGui.QIcon(r'images\currency.png'), 'Open File', self)
         extractAction.triggered.connect(self.file_open)
         extractAction.setShortcut("Ctrl+O")
         extractAction.setStatusTip('Open File')
@@ -85,7 +85,7 @@ class Window(QtGui.QMainWindow):
         self.toolBar = self.addToolBar("Extraction")
         self.toolBar.addAction(extractAction)
 
-        extractBattel = QtGui.QAction(QtGui.QIcon('switch.jpg'), 'Close', self)
+        extractBattel = QtGui.QAction(QtGui.QIcon(r'images\switch.jpg'), 'Close', self)
         extractBattel.triggered.connect(self.close_application)
         extractBattel.setShortcut("Ctrl+q")
         extractBattel.setStatusTip('Close')
@@ -94,7 +94,7 @@ class Window(QtGui.QMainWindow):
         self.toolBar = self.addToolBar("extractBattel")
         self.toolBar.addAction(extractBattel)
 
-##        Game = QtGui.QAction(QtGui.QIcon('guitar.jpg'), 'TP', self)
+##        Game = QtGui.QAction(QtGui.QIcon(r'images\guitar.jpg'), 'TP', self)
 ##        Game .triggered.connect(self.message_application)
 ##        Game .setStatusTip('OOPs')
 ##
