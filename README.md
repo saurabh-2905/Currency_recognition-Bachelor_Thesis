@@ -6,4 +6,4 @@ The processing and GUI design is done using Python.
 
 ## GUI:
 
-![alt text](https://github.com/saurabh-2905/Currency_recognition-Python/blob/master/GUI.png?raw=true)
+![GUI](https://github.com/saurabh-2905/Currency_recognition-Python/blob/master/images/GUI.PNG?raw=true)
