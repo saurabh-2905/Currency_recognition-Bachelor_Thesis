@@ -4,6 +4,10 @@ This program can be used to identify the currency and its denominations from the
 
 The processing and GUI design is done using Python.
 
+#### Run the application
+    $python Interface1.py
+
 ## GUI:
 
+#### Front Panel:
 ![GUI](https://github.com/saurabh-2905/Currency_recognition-Python/blob/master/images/GUI.PNG?raw=true)
